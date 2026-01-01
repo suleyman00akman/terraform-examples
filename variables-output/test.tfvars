@@ -1,1 +1,1 @@
-ec2_name    = "my-EC2-instance-test.tfvars"
+ec2_name = "my-EC2-instance-test.tfvars"

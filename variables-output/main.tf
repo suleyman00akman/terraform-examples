@@ -7,3 +7,13 @@ resource "aws_instance" "main" {
     Environment = var.environment
   }
 }
+
+resource "aws_instance" "import" {
+  ami           = "ami-068c0051b15cdb816"
+  instance_type = "t3.micro"
+
+  tags = {
+    Name        = "deneme"
+  
+  }
+}
