@@ -17,3 +17,23 @@ resource "aws_instance" "import" {
   
   }
 }
+
+resource "aws_instance" "import2" {
+  ami           = "ami-068c0051b15cdb816"
+  instance_type = "t3.micro"
+
+  tags = {
+    Name        = "deneme"
+  
+  }
+}
+
+resource "aws_instance" "import3" {
+  ami           = "ami-0b6c6ebed2801a5cb"
+  instance_type = "t3.micro"
+
+  tags = {
+    Name        = "my-EC2-instance-terraform.auto.tfvars"
+  
+  }
+}
